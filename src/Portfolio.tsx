@@ -7,36 +7,39 @@ export default function Portfolio() {
 
   // CUSTOMIZE YOUR DATA HERE
   const portfolioData = {
-    name: "Your Name",
+    name: "Nishigandha Mali",
     title: "Full Stack Developer",
-    email: "your.email@example.com",
-    github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
-    location: "Your City, Country",
+    email: "nishigandha.mali1111@gmail.com",
+    github: "https://github.com/Nishig01",
+    linkedin: "https://www.linkedin.com/in/nishigandha-mali-313751197/",
+    location: "United States",
     
     about: "Passionate software developer with expertise in building scalable web applications. I love solving complex problems and creating elegant solutions that make a difference.",
     
     experience: [
       {
-        company: "Tech Company Inc.",
-        role: "Senior Software Engineer",
-        period: "Jan 2022 - Present",
-        location: "San Francisco, CA",
+        company: "Siemens Digital Industries Software",
+        role: "Software Engineer",
+        period: "Jan 2022 - Jul 2025",
+        location: "Pune, India",
         description: [
-          "Led development of microservices architecture serving 1M+ users",
-          "Improved application performance by 40% through optimization",
-          "Mentored 5 junior developers and conducted code reviews"
+          "Led design and development of cloud-native microservices architecture powering industrial SaaS products used by tens of thousands of enterprise users globally, ensuring high availability and scalability.​",
+          "Improved end-to-end application performance by 40% through profiling, refactoring critical paths, optimizing database queries, and introducing asynchronous, event-driven processing",
+          "Mentored 5 junior developers via code reviews, design discussions, and pair programming, raising code quality and consistency across services.",
+          "Implemented and maintained CI/CD pipelines with Docker and Kubernetes on cloud platforms, enabling reliable, low-downtime releases for distributed services.​",
+          "Enhanced observability and reliability by instrumenting services with structured logging and metrics dashboards, reducing mean time to detect and resolve production issues."
         ]
       },
       {
-        company: "StartUp XYZ",
+        company: "Siemens Digital Industries Software",
         role: "Full Stack Developer",
         period: "Jun 2020 - Dec 2021",
-        location: "Remote",
+        location: "Pune, India",
         description: [
-          "Built responsive web applications using React and Node.js",
-          "Implemented RESTful APIs and integrated third-party services",
-          "Collaborated with design team to implement pixel-perfect UIs"
+          "Built responsive, production-grade web applications using React and Node.js for internal factory digitalization and analytics workflows, improving feature delivery speed for engineering teams.",
+          "Developed RESTful APIs, integrated third-party and internal Siemens APIs, and implemented robust error handling and authentication for secure data flows.",
+          "Collaborated with designers to ship pixel-perfect, accessible UIs and implemented reusable front-end components, improving UI consistency and reducing rework.",
+          "Introduced automated testing practices (unit/integration) and linting to the front-end and back-end codebases, preventing regressions and supporting frequent deployments."
         ]
       }
     ],
@@ -46,21 +49,21 @@ export default function Portfolio() {
         name: "E-Commerce Platform",
         description: "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard",
         technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-        link: "https://github.com/yourusername/project1",
+        // link: "https://github.com/Nishig01/project1",
         highlights: ["Handles 10k+ daily transactions", "99.9% uptime"]
       },
       {
-        name: "Task Management App",
-        description: "Real-time collaborative task management application with drag-and-drop interface",
-        technologies: ["React", "Firebase", "Tailwind CSS"],
-        link: "https://github.com/yourusername/project2",
-        highlights: ["Real-time sync", "Offline support"]
+        name: "Data Center Cooling Load Balancing using Greedy Algorithm",
+        description: "Priortizing cooling the hottest server rack to minimize peak temperature and achieve thermal stability within defined constraints",
+        technologies: ["CPP", "Algorithm", "Data Structures", "gnuplot"],
+        link: "https://github.com/Nishig01/datacenter-cooling-greedy-algorithm",
+        highlights: ["Greedy Cooling Algorithm" , "Thermal Optimization Simulation"]
       },
       {
         name: "AI Chat Assistant",
         description: "Intelligent chatbot using natural language processing for customer support automation",
         technologies: ["Python", "TensorFlow", "Flask", "React"],
-        link: "https://github.com/yourusername/project3",
+        // link: "https://github.com/Nishig01/project3",
         highlights: ["90% accuracy", "Multi-language support"]
       }
     ],
@@ -113,7 +116,7 @@ export default function Portfolio() {
              className="p-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">
             <Linkedin className="w-6 h-6" />
           </a>
-          <a href={`mailto:${portfolioData.email}`}
+          <a href={`mailto:${portfolioData.email}`} target="_blank"
              className="p-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition">
             <Mail className="w-6 h-6" />
           </a>
@@ -247,7 +250,7 @@ export default function Portfolio() {
         
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <div className="space-y-4">
-            <a href={`mailto:${portfolioData.email}`} 
+            <a href={`mailto:${portfolioData.email}`} target="_blank"
                className="flex items-center justify-center p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition">
               <Mail className="w-6 h-6 mr-3 text-purple-600" />
               <span className="text-lg text-gray-900">{portfolioData.email}</span>
@@ -364,7 +367,7 @@ export default function Portfolio() {
                className="hover:text-blue-400 transition">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href={`mailto:${portfolioData.email}`}
+            <a href={`mailto:${portfolioData.email}`} target="_blank"
                className="hover:text-blue-400 transition">
               <Mail className="w-5 h-5" />
             </a>
